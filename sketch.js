@@ -11,6 +11,7 @@ let ySpeed;
 let xDirection = 1;
 let yDirection = 1;
 
+
 //Box Stuff
 
 let xPosB = 250;
@@ -20,12 +21,13 @@ let boxLeft, boxRight, boxTop, boxBottom;
 
 let speedBX = 3;
 
+
 //Random
 
 let score = 0;
 let Prin;
 let e = false;
- 
+
 function setup() {
    createCanvas(500, 500);
    background(0);
@@ -67,7 +69,7 @@ function draw() {
    if (yPosE < 0) {
         yDirection *= -1;
    }
-   
+
    //Box area
    boxTop = yPosB - 15;
    boxBottom = yPosB + 15;
@@ -82,7 +84,7 @@ function draw() {
    
    //If ball and box meet
    if(BLeft > boxRight || BRight < boxLeft || BTop > boxBottom || BBottom < boxTop)  {
- 
+
    }
    else {
         //If you un-comment xDirection it will go back
@@ -102,7 +104,7 @@ function draw() {
    if (keyIsDown(RIGHT_ARROW)) {
         xPosB += speedBX;
     }
-    
+
    //Lose
    if (yPosE > 500) {
         score = 'You LOST!';
