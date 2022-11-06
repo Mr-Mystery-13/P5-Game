@@ -6,7 +6,33 @@
     <title>P5 Game</title>
 </head>
 
-<body>
+<style>
+
+    * {
+        color: #fefefe;
+    }
+
+    .Div1 {
+        display: flex; 
+        align-items: center; 
+        gap: 7px;
+    }
+
+    .PlayAgainBtn {
+        height: 30px; 
+        background-color: #4f545c;
+        text-decoration: none; 
+        border-radius: 5px;
+        border: none;
+        transition: all 100ms;
+    }
+    .PlayAgainBtn:hover {
+        background-color: gray;
+    }
+
+</style>
+
+<body style="background-color: #36393f;">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.min.js"></script>
     <script src="sketch.js"></script>
@@ -19,13 +45,18 @@
             <li>The goal is to get as many points by keeping the ball from bouncing on the bottom.</li>
             <li>Move the paddle left or right with your arrow key.</li>
             <li>The longer you play the faster the ball gets.</li>
-            <li>(Check out what happens when you press and hold the up, down, left, and right arrow keys!)</li>
+            <li>
+                <details>
+                    <summary>A Secret 🤫</summary>
+                    <p>Check out what happens when you press and hold the up, down, left, and right arrow keys!</p>
+                </details>
+            </li>
         </ul>
     </details>
 
-    <div style="display: flex; align-items: center; gap: 7px;">
+    <div class="Div1">
         <h3>Good Luck!</h3>
-        <a href="index.html"><button style="height: 30px; text-decoration: none; color: #000;">Click to Play Again!</button></a>
+        <a href="index.html"><button class="PlayAgainBtn">Click to Play Again!</button></a>
     </div>
 
 </body>
