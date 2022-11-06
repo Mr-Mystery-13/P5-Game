@@ -22,11 +22,11 @@ let boxLeft, boxRight, boxTop, boxBottom;
 let speedBX = 3;
 
 
-//Random
+//Other
 
 let score = 0;
-let Prin;
 let e = false;
+
 
 function setup() {
      createCanvas(500, 500);
@@ -35,8 +35,8 @@ function setup() {
      xPosE = random(50, 451);
      yPosE = random(50, 451);
 
-     xSpeed = random(-5, 4);
-     ySpeed = random(-5, 4);
+     xSpeed = random(-4, 4);
+     ySpeed = random(-4, 4);
 
      rectMode(CENTER);
 }
@@ -47,8 +47,7 @@ function draw() {
      textAlign(LEFT);
      fill(255, 0, 0);
      textSize(20);
-     Prin = "Score: " + score;
-     text(Prin, 10, 30);
+     text(`Score: ${score}`, 10, 30);
 
      //Box
      fill(255, 0, 0);
@@ -124,9 +123,9 @@ function draw() {
 }
 
 // function mouseClicked() {
-//      textAlign(CENTER, CENTER);
-//      textSize(40);
-//      text('GOD MODE', 250, 250);
-//      speedBX = 7;
-//      e = true;
+//     textAlign(CENTER, CENTER);
+//     textSize(40);
+//     text('GOD MODE', 250, 250);
+//     speedBX = 7;
+//     e = true;
 // }
