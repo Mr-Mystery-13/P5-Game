@@ -42,7 +42,7 @@ function setup() {
 }
 
 function draw() {
-     background(0, 20);
+     background(0, 30);
 
      textAlign(LEFT);
      fill(255, 0, 0);
@@ -115,7 +115,7 @@ function draw() {
           textAlign(CENTER, CENTER);
           textSize(40);
           text('GOD MODE', 250, 250);
-          speedBX = 7;
+          speedBX += 7;
           e = true;
      }
      if (e === true) {
